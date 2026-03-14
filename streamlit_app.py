@@ -1,5 +1,8 @@
 import streamlit as st
-from data.finmind_api import get_stock_price, get_eps
+from data import finmind_api
+
+get_stock_price = finmind_api.get_stock_price
+get_eps = finmind_api.get_eps
 
 st.title("台股分析系統")
 
